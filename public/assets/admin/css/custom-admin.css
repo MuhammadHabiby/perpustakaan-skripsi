@@ -1,0 +1,120 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.admin-header {
+    z-index: 1030;
+}
+
+@media (min-width: 992px) {
+    .sidebar-desktop {
+        position: fixed;
+        top: 56px;
+        bottom: 0;
+        left: 0;
+        z-index: 100;
+        padding: 0;
+        box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+        border-right: 1px solid #dee2e6;
+        width: 250px;
+    }
+
+    .sidebar-sticky {
+        position: sticky;
+        top: 0;
+        height: calc(100vh - 56px);
+        padding-top: 0.5rem;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .main-content-desktop {
+        margin-left: 250px;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+}
+
+.sidebar-nav .nav-link {
+    font-weight: 500;
+    color: #333;
+    padding: 0.75rem 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-nav .nav-link .bi {
+    margin-right: 10px;
+    font-size: 1.1rem;
+    width: 20px;
+    text-align: center;
+}
+
+.sidebar-nav .nav-link.active {
+    color: #0d6efd;
+    background-color: #e9ecef;
+}
+
+.sidebar-nav .nav-link:hover:not(.active) {
+    color: #0a58ca;
+    background-color: #f8f9fa;
+}
+
+.sidebar-heading {
+    font-size: 0.75rem;
+    color: #6c757d;
+}
+
+.sidebar-nav .nav-submenu {
+    padding-left: 2.5rem;
+}
+.sidebar-nav .nav-submenu .nav-link {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+}
+.sidebar-nav .nav-submenu .nav-link .bi {
+    font-size: 0.9rem;
+    margin-right: 8px;
+}
+
+.page-header {
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.page-content {
+    padding-bottom: 1.5rem;
+}
+
+.offcanvas-body {
+    padding: 0;
+}
+
+.border-start {
+    border-left-width: 0 !important;
+    border-right-width: 0 !important;
+}
+.border-start.border-4 {
+    border-left: 0.25rem solid var(--bs-border-color) !important;
+}
+.border-primary {
+    --bs-border-color: #0d6efd;
+}
+.border-success {
+    --bs-border-color: #198754;
+}
+.border-info {
+    --bs-border-color: #0dcaf0;
+}
+.border-warning {
+    --bs-border-color: #ffc107;
+}
+.text-gray-300 {
+    color: #adb5bd !important;
+}
+.text-gray-800 {
+    color: #343a40 !important;
+}
